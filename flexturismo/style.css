@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(14, 14, 97);
+    width: 100%;
+}
+
+.header-div{
+    align-items: center;
+    box-sizing: border-box;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px ;
+    position: relative;
+    width: 1200;
+}
+
+header p{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+header a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* --------------banner----------------- */
+main{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.banner h1{
+    color: rgb(14, 14, 97);
+    font-size: 50px;
+}
+
+.main-images{
+    height: 350px;
+}
+
+.banner p{
+    color: rgb(14, 14, 97);
+    margin: 20px 0;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 26px;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+.white-button{
+    background-color:white;
+    color:black;
+} 
+
+.blue-button{
+    background-color: rgb(14, 14, 97);
+    color: white;
+} 
+
+/* --------------quem somos----------------- */
+
+.quem-somos{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.quem-somos div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.quem-somos h2{
+    color: rgb(14, 14, 97);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.quem-somos p{
+    margin-bottom: 30px;
+}
+
+/* -----------------serviços------------------- */
+
+.servicos{
+    background-color: rgb(14, 14, 97);
+    text-align: center;
+    width: 100%;
+}
+
+.servicos-div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 40px 0px;
+    position: relative;
+    width: 1200;
+}
+
+.servicos-buy{
+    padding: 40px 0;
+    width: 350;
+}
+
+.servicos-buy p {
+    color: white;
+    margin: 20px;
+}
+
+.servicos-div h3{
+    color: white;
+    left: 150px;
+    position: absolute;
+    font-size: 26px;
+    top: 10px;
+}
+/* ------------------Planos--------- */
+.planos{
+    align-items: flex-end;
+    display: flex;
+    justify-content:space-around;
+    margin: 50px auto ;
+    padding-top: 50px;
+    position: relative;
+    width: 1200px;
+}
+
+.planos h2{
+    color: rgb(14, 14, 97);
+    font-size: 26px;
+    left: 100px;
+    position: absolute;
+    top: 10px;
+}
+
+.planos h3{
+    align-items: center;
+    color: rgb(14, 14, 97);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.planos h3::after{
+    background-color: rgb(14, 14, 97);
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.planos ul{
+    list-style: none;
+    padding: 30px 0;
+}
+
+.planos li{
+    align-items: center;
+    display: flex;
+    margin: 20px;
+}
+
+.planos li::before{
+    background-color: rgb(14, 14, 97);
+    content: "";
+    display: block;
+    height: 10px;
+    margin-right: 10px;
+    width: 10px;
+}
+
+.div-plano{
+    border: 3px solid rgb(14, 14, 97);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* ---------------footer---------- */
+
+footer{
+    background-color: rgb(14, 14, 97);
+    padding: 20px 0;
+}
+
+footer div{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+/* ---------------pseudo----------- */
+nav a:hover{
+    text-decoration: underline;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.blue-button:hover{
+    background-color: rgb(51, 51, 199);
+}
+
+.white-button:hover{
+    background-color: rgb(224, 224, 224);
+}
+/* -------------mobile menu------------------ */
+#mobile-menu{
+    display: none;
+}
+
+.mobile-label{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+
+/* -------------responsividade-------------- */
+
+@media screen and (max-width: 1200px){
+    .header-div, main, .servicos-div, .planos, footer div{
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 769px){
+    .banner{
+        flex-direction: column-reverse;
+    }    
+    .quem-somos, .servicos-div ,.planos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-images{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .servicos h3, .planos h2{
+        position: relative;
+        left: 0;
+    }
+
+    .planos h2{
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .div-plano{
+        margin-bottom: 40px;
+    }
+
+    .header-div{
+        display: inline-block;
+    }
+
+
+    .mobile-label{
+        display: inline-block;
+    }
+
+    #mobile-menu:checked ~ nav{
+        display: none;
+    }
+    nav ul{
+        align-items: center;
+    }
+
+    nav li{
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main-images{
+        height: auto;
+        width: 300px;
+    }
+
+    .quem-somos div{
+        width: 280px;
+    }
+
+    .servicos-buy{
+        width: 300px;
+    }
+
+    footer div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
