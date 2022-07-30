@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.calculator-body{
+    background-color: #1B2430;
+    border-radius: 10px;
+    border: groove #2C3333 5px;
+    height: 350px;
+    margin: 5% auto 0 auto;
+    position: relative;
+    width: 320px;
+}
+
+.simple-button{
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    margin: 5px 0;
+}
+
+.button-white{
+    background: linear-gradient(to bottom, grey 30%, white);
+}
+
+.button-orange{
+    background: linear-gradient(to bottom, #D67D3E 70%, #DFBB9D);
+    height: 90px;
+}
+
+.button-blue{
+    background: linear-gradient(to bottom, #ABC9FF 70%, #D6EFED);
+}
+
+.visor{
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    height: 40px;
+    justify-content: end;
+    margin: 10px 0px 40px 0px;
+}
+
+p{
+    margin: 10px;
+}
+
+.calc-buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
