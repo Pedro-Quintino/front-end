@@ -31,6 +31,6 @@ function stopCronometer(){
 function pauseCronometer(){
     value = 2;
     let now = new Date();
-    oldTime =  Math.round((now.getTime() - before.getTime()));
+    oldTime +=  Math.round((now.getTime() - before.getTime()));
 }
 const clockTimer = setInterval(clock, 1000);

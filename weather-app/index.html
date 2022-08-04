@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather app</h1>
+        <form autocomplete="off">
+            <label for="search-input">Enter a location for weather information</label>
+            <input type="text" name="search-input" class="search-input">
+        </form>
+        <div class="card none">
+            <div class="weather-div">
+                <img src="https://via.placeholder.com/300" alt="Time image" class="time-image">
+                <div class="weather-icon">
+                    <img src="img/icons/1.svg" alt="icon" class="icon">
+                </div>
+                <h2>city name</h2>
+                <p class="weather-condition">weather condition</p>
+                <p class="temperature" ><span>Temp </span>&deg;C</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/forecast.js"></script>
+</body>
+</html>
